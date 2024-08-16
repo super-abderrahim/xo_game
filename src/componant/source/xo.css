@@ -1,0 +1,114 @@
+.container {
+    height: auto; /* Adjust height to auto */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px; /* Add some padding */
+}
+
+.title {
+    color: aliceblue;
+    margin: 20px;
+    text-align: center; /* Center text */
+    font-size: 2em; /* Responsive font size */
+}
+
+.title span {
+    color: #21ffcb;
+    padding-left: 10px;
+}
+
+.reset {
+    width: 100%;
+    max-width: 200px; /* Max width for larger screens */
+    height: 60px;
+    background-color: #1f3540;
+    color: #21ffcb;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.5em; /* Adjust font size */
+    border-radius: 50px; /* Adjust border radius */
+    margin: 20px;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.reset:hover {
+    background-color: #15262f; /* Darker color on hover */
+}
+
+.board {
+    width: 100%;
+    max-width: 500px; /* Max width for larger screens */
+    height: auto; /* Adjust height to auto */
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+    gap: 10px; /* Add some gap between boxes */
+    justify-content:center;
+}
+
+.row1, .row2, .row3 {
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Full width */
+}
+
+.boxes {
+    background-color: #1f3540;
+    width: 30%; /* Responsive width */
+    height: 0; /* Maintain aspect ratio */
+    padding-bottom: 30%; /* Aspect ratio 1:1 */
+    border: 4px solid #0f1b21;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative; /* For positioning image */
+}
+
+.boxes img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 600px) {
+    .title {
+        font-size: 1.5em;
+        margin-top: 100px; /* Even smaller font size */
+         /* Smaller font size */
+    }
+
+    .reset {
+        font-size: 1.2em; /* Smaller font size */
+    }
+    .board {
+        margin-top: 60px;
+        margin-bottom: 20px;
+    }
+    .boxes {
+        width: 25%; /* Responsive width */
+        padding-bottom: 32%; /* Maintain aspect ratio */
+    }
+}
+
+@media (max-width: 400px) {
+    .title {
+        font-size: 1.2em;
+        margin-top: 100px; /* Even smaller font size */
+    }
+
+    .reset {
+        font-size: 1em; /* Even smaller font size */
+    }
+    .board {
+        margin-top: 60px;
+        margin-bottom: 20px;
+    }
+    
+
+    .boxes {
+        width: 25%; /* Responsive width */
+ /* Maintain aspect ratio */
+    }
+}
