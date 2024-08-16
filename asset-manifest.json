@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/xo_game/static/css/main.0abc1f96.css",
+    "main.js": "/xo_game/static/js/main.ba37e300.js",
+    "static/media/R.jpg": "/xo_game/static/media/R.ae28e43fa0ee015c4621.jpg",
+    "index.html": "/xo_game/index.html",
+    "main.0abc1f96.css.map": "/xo_game/static/css/main.0abc1f96.css.map",
+    "main.ba37e300.js.map": "/xo_game/static/js/main.ba37e300.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0abc1f96.css",
+    "static/js/main.ba37e300.js"
+  ]
+}
